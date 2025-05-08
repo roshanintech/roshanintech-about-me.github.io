@@ -90,6 +90,8 @@
       margin-top: 20px;
       font-style: italic;
       color: #555;
+      text-align: center;
+      transition: opacity 0.5s ease;
     }
   </style>
 </head>
@@ -109,7 +111,7 @@
       <h2 class="section-title">🎓 Education</h2>
       <p><strong>Degree:</strong> Bachelor of Science in Computer Science</p>
       <p><strong>University:</strong> East Central University</p>
-      <p><strong>Expected Graduation:</strong> Spring 2026 </p>
+      <p><strong>Expected Graduation:</strong> Spring 2026</p>
     </div>
 
     <div>
@@ -117,7 +119,7 @@
       <ul>
         <li>Data Structures & Algorithms</li>
         <li>Operating Systems</li>
-        <li>Database Systems design</li>
+        <li>Database Systems Design</li>
         <li>Computer Architecture</li>
         <li>Software Engineering</li>
       </ul>
@@ -143,18 +145,18 @@
       </ul>
     </div>
 
-   <div>
-  <h2 class="section-title">📫 Contact</h2>
-  <p>Email: <strong>roshan891011@gmail.com</strong></p>
-  <p>GitHub: <a href="https://github.com/roshanintech" target="_blank">roshanintech</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/roshanintech/" target="_blank">linkedin.com/in/roshanintech</a></p>
-</div>
+    <div>
+      <h2 class="section-title">📫 Contact</h2>
+      <p>Email: <strong>roshan891011@gmail.com</strong></p>
+      <p>GitHub: <a href="https://github.com/roshanintech" target="_blank">roshanintech</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/roshanintech/" target="_blank">linkedin.com/in/roshanintech</a></p>
+    </div>
 
-<div>
-  <button onclick="showQuote()">Get a Motivational Boost</button>
-  <div id="quote"></div>
-</div>
-
+    <div>
+      <button onclick="showQuote()">Get a Motivational Boost</button>
+      <div id="quote"></div>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 Roshan. Built with passion and purpose.
@@ -163,13 +165,20 @@
   <script>
     function showQuote() {
       const quotes = [
-       "Strive not to be a success, but rather to be of value. — Albert Einstein",
-        "Opportunities don't happen. You create them. — Chris Grosser"
+        "Strive not to be a success, but rather to be of value. — Albert Einstein",
+        "Opportunities don't happen. You create them. — Chris Grosser",
+        "The best way to predict the future is to invent it. — Alan Kay",
+        "Success usually comes to those who are too busy to be looking for it. — Henry David Thoreau",
+        "If you are not willing to risk the usual, you will have to settle for the ordinary. — Jim Rohn"
       ];
       const random = Math.floor(Math.random() * quotes.length);
-      document.getElementById('quote').textContent = quotes[random];
+      const quoteDiv = document.getElementById('quote');
+      quoteDiv.style.opacity = 0;
+      setTimeout(() => {
+        quoteDiv.textContent = quotes[random];
+        quoteDiv.style.opacity = 1;
+      }, 200);
     }
   </script>
 </body>
 </html>
-
