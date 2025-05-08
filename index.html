@@ -1,116 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Roshan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roshan | Computer Science Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-            color: #333;
-            padding: 20px;
-            animation: fadeIn 2s ease-in;
-        }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+    header {
+      background: linear-gradient(to right, #1c92d2, #f2fcfe);
+      padding: 40px 20px;
+      text-align: center;
+      color: #003366;
+    }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            animation: slideDown 1.5s ease-out;
-        }
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.3em;
+    }
 
-        @keyframes slideDown {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
+    header p {
+      font-size: 1.3em;
+      margin-top: 0;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            color: #0a3d62;
-        }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            animation: popIn 1s ease-in-out;
-        }
+    .section-title {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      color: #0a3d62;
+    }
 
-        @keyframes popIn {
-            from { transform: scale(0.9); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
+    ul {
+      list-style: circle;
+      margin-left: 20px;
+      line-height: 1.6;
+    }
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+    .highlight {
+      color: #e67e22;
+      font-weight: bold;
+    }
 
-        .highlight {
-            color: #e67e22;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background-color: #eef3f7;
+      margin-top: 40px;
+    }
 
-        .highlight:hover {
-            color: #d35400;
-        }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #1c92d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
 
-        ul {
-            margin-left: 20px;
-            font-size: 1.1em;
-        }
+    button:hover {
+      background-color: #145a86;
+    }
 
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #777;
-            animation: fadeIn 3s ease-in;
-        }
-    </style>
+    #quote {
+      margin-top: 20px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>👋 Hello, I'm Roshan!</h1>
-    </header>
+  <header>
+    <h1>👨‍💻 Roshan</h1>
+    <p>Computer Science Major | Aspiring Developer | Problem Solver</p>
+  </header>
 
-    <div class="container">
-        <p>Welcome to my digital space! I'm passionate about <span class="highlight">technology</span>, <span class="highlight">creativity</span>, and always exploring new ideas. I enjoy learning, building things from scratch, and constantly improving myself.</p>
-
-        <p>I am currently a <span class="highlight">Computer Science major</span>, pursuing my degree with a strong interest in software development, data structures, and web technologies. My academic journey includes classes like:</p>
-        <ul>
-            <li>Data Structures & Algorithms</li>
-            <li>Web Development</li>
-            <li>Operating Systems</li>
-            <li>Database Management</li>
-            <li>Computer Networks</li>
-            <li>Software Engineering</li>
-        </ul>
-
-        <p>This webpage is part of my journey to grow as a web developer. I'm excited to keep adding features, improving design, and bringing ideas to life with code and creativity!</p>
-
-        <p>If you're reading this, thank you for stopping by. Let's connect and grow together. 🚀</p>
+  <div class="container">
+    <div>
+      <h2 class="section-title">👋 About Me</h2>
+      <p>I'm <span class="highlight">Roshan</span>, a passionate Computer Science student with strong interests in software development, technology, and problem solving. I thrive on building creative digital experiences and constantly expanding my skills in modern development tools and concepts.</p>
     </div>
 
-    <footer>
-        &copy; 2025 Roshan | Built with ❤️ and curiosity
-    </footer>
+    <div>
+      <h2 class="section-title">🎓 Education</h2>
+      <p><strong>Degree:</strong> Bachelor of Science in Computer Science</p>
+      <p><strong>University:</strong> East Central University</p>
+      <p><strong>Expected Graduation:</strong> Spring 2026 </p>
+    </div>
+
+    <div>
+      <h2 class="section-title">📚 Major Courses</h2>
+      <ul>
+        <li>Data Structures & Algorithms</li>
+        <li>Operating Systems</li>
+        <li>Database Systems design</li>
+        <li>Computer Architecture</li>
+        <li>Software Engineering</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="section-title">💼 Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript, Python</li>
+        <li>React.js, Node.js, Git & GitHub</li>
+        <li>SQL, MySQL</li>
+        <li>Problem Solving & Debugging</li>
+        <li>Responsive Design & UI Principles</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="section-title">🚀 Projects</h2>
+      <ul>
+        <li><strong>Personal Portfolio Website</strong> – Built with HTML/CSS/JS to showcase skills and projects.</li>
+        <li><strong>To-Do List App</strong> – A responsive task tracker using vanilla JavaScript.</li>
+        <li><strong>Weather Dashboard</strong> – Fetches live weather using APIs and displays it cleanly.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="section-title">📫 Contact</h2>
+      <p>Email: <strong>roshan891011@gmail.com.com</strong></p>
+      <p>GitHub: <a href="https://github.com/roshanintech" target="_blank">roshanintech</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/roshanintech/" target="_blank">linkedin.com/in/rkhatri21@</a></p>
+    </div>
+
+    <div>
+      <button onclick="Get a Motivational Boost()"></button>
+      <div id="quote"></div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Roshan. Built with passion and purpose.
+  </footer>
+
+  <script>
+    function showQuote() {
+      const quotes = [
+       "Strive not to be a success, but rather to be of value. — Albert Einstein",
+        "Opportunities don't happen. You create them. — Chris Grosser"
+      ];
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quote').textContent = quotes[random];
+    }
+  </script>
 </body>
 </html>
+
